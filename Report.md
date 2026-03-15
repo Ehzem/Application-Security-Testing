@@ -55,10 +55,10 @@ If a victim is already logged into the application and clicks this link, the bro
 
 An attacker could also embed this request in a malicious web page using an element such as:
 
-'<html>'
-'<body>'
-'<img src="http://localhost:8080/vulnerabilities/csrf/?password_new=hacked123&password_conf=hacked123&Change=Change">'
-'</body>'
-'</html>'
+`<html>`
+`<body>`
+`<img src="http://localhost:8080/vulnerabilities/csrf/?password_new=hacked123&password_conf=hacked123&Change=Change">`
+`</body>`
+`</html>`
 
 When the victim visits the attacker-controlled page, the browser automatically loads the image, which triggers the request to the DVWA server. Since the user is already authenticated, the password change request is executed without the user's knowledge or consent.

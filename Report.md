@@ -9,7 +9,7 @@ Password: password
 Result:
 Login successful.
 
-!(screenshots/BruteForce_low.png)
+!![DVWA Brute Force Page](screenshots/BruteForce_low.png)
 
 Explanation:
 The application allows unlimited login attempts without implementing rate limiting or account lockout mechanisms. This enables attackers to guess credentials through brute force attacks.
